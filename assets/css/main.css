@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../image/background.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(8px);
+    z-index: -1; 
+}
+
+#home-screen {
+    font-family: "Bagel Fat One", system-ui;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+    color: white;
+    font-size: 10em;
+    text-align: center;
+    text-shadow: 5px 5px 10px black;
+}
+.heading p{
+    font-weight: 100;
+    color: white;
+    font-size: 6em;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+#start-game-btn {
+    font-size: 2em;
+    color: black;
+    border: none;
+    text-align: center;
+    height: 75px;
+    margin-top: 240px;
+    width: 300px;
+    border-radius: 40px;
+    font-family: "Bagel Fat One", system-ui;
+    border-radius: 50px;
+    background: #e0e0e0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#start-game-btn:hover {
+    background-color: #b8b8b8;
+    transform: scale(1.1); 
+}
+
+#start-game-btn:active {
+    transform: scale(0.95);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #ffffffcc;
+    height: 50vh;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px #0000001a;
+}
+  
+  
+.word-container {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+  
+#word-input {
+    padding: 10px;
+    margin: 30px;
+    font-size:30px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+  
+.time-score{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    max-width: 400px;
+    margin:auto;
+    font-size: 30px;
+    margin-top: 50px;
+    font-family: "Bagel Fat One", system-ui;
+    letter-spacing: 2px;
+}
+
+#timer,
+#score{
+    color: #802b49;
+}
+  
+#restart-btn {
+    font-size: 2em;
+    color: black;
+    border: none;
+    text-align: center;
+    height: 75px;
+    margin-top: 240px;
+    width: 300px;
+    font-family: "Bagel Fat One", system-ui;
+    border-radius: 50px;
+    background: #e0e0e0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#restart-btn:hover {
+    background-color: #b8b8b8;
+    transform: scale(1.1); 
+}
+
+#restart-btn:active {
+    transform: scale(0.95);
+}
