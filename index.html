@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html dir="ltr" lang ="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport"content="width=device-wode,initial-scale=1">
+        <meta name="author"content="Xiyu Zhou">
+        <title>Typing Carnival</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="icon" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/favicon.png?v=2" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <script src="./assets/js/app.js" defer></script>
+    </head>
+    <body>
+        <div id="home-screen">
+            <div class="heading">
+                <h1>Carnival</h1>       
+                <p>Typing</p>    
+            </div>
+            <button id="start-game-btn">START</button>
+        </div>
+        <main id="game-screen" style="display: none;">
+            <div class="container">
+                <div class="time-score">
+                    <div>
+                        <p>TIMER <span id="timer">--</span></p>
+                    </div>
+                    <div>
+                        <p>SCORE <span id="score">--</span></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="word-container">
+                        <p><span id="word-display">- - - -</span></p>
+                    </div>
+                    <form>
+                        <input type="text" id="word-input">
+                    </form>
+                </div>
+            </div>
+            <button id="restart-btn">RESTART</button>
+        </main>
+    </body>
+</html> 
